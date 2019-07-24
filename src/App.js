@@ -1,15 +1,22 @@
 import React from 'react';
+import { BrowserRouter as Router } from "react-router-dom";
 import './App.css';
+import Header from './header';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <h3>Jafta's App</h3>
-        
-      </header>
+    <Router>
+    <div >
+      <Header />
+
     </div>
-  );
+  </Router>
+);
 }
+
+// function Home() {
+// return <h2>Home</h2>;
+// }
 
 export default App;
