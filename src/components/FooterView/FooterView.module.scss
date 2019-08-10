@@ -1,0 +1,8 @@
+@import '../../utils/css/mixins/screens.scss';
+@import '../../utils/css/mixins/colors.scss';
+.content {
+  background-color: $nilBlue;
+  height: 10vh;
+  color: $nilWhite;
+  bottom: 0vh;
+}

@@ -1,22 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router } from "react-router-dom";
-import './App.css';
-import Header from './header';
-
+//import Header from './header';
+import LoginPage from './pages/LoginPage/LoginPage';
 
 function App() {
   return (
     <Router>
-    <div >
-      <Header />
-
-    </div>
+    <LoginPage/>
   </Router>
 );
 }
-
-// function Home() {
-// return <h2>Home</h2>;
-// }
 
 export default App;

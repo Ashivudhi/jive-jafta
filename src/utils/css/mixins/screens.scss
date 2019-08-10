@@ -1,0 +1,14 @@
+@import './mixins.scss';
+$maxWidth: 100%;
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+.content {
+  display: flex;
+  width: $maxWidth;
+  min-height: 100%;
+  text-align: center;
+  margin: 0 auto;
+}

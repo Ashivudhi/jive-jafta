@@ -1,0 +1,9 @@
+.input {
+  padding: 1em;
+  width: 100%;
+  border: none;
+  background-color: rgb(241, 239, 239);
+  &:focus {
+    outline: none;
+  }
+}

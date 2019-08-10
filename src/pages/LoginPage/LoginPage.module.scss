@@ -1,0 +1,22 @@
+@import '../../utils/css/mixins/screens.scss';
+@import '../../utils/css/mixins/colors.scss';
+$paneHeight: 100vh;
+.content {
+ 
+  .leftpane {
+    height: $paneHeight;
+    max-width: 200vh;
+    background-color: $jiveGray;
+    color: $jiveBlue;
+    flex: 1;
+    padding-top: 20vh;
+  }
+
+  .rightpane {
+    background-color: $jiveGray;
+    height: $paneHeight;
+    color: $jiveBlue;
+    flex: 1;
+  }
+  
+}

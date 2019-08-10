@@ -1,0 +1,146 @@
+@import './colors.scss';
+
+/* 
+ * Quickly manipulate fonts
+*/
+@mixin fonts($weight, $size, $style) {
+  font-weight: $weight;
+  font-size: $size;
+  font-style: $style;
+}
+
+@mixin box-shadow($color: rgba(0, 0, 0, 0.75)) {
+  box-shadow: 9px 15px 25px -11px $color;
+}
+
+/* 
+  *Quicly add hover effects
+*/
+@mixin hover-shadow {
+  &:hover {
+    cursor: pointer;
+    background-color: $darkGray;
+    box-shadow: 9px 15px 25px -11px rgba(0, 0, 0, 0.75);
+  }
+}
+
+@mixin shadowPulsate {
+  @keyframes shadow-pulse {
+    0% {
+      box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+  }
+}
+
+@mixin growEffect {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+@mixin slideInLeft {
+  transition: 5s;
+  left: 0;
+}
+
+@mixin fadeInAnimation {
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+@mixin growHeightAndWidth($startH, $startW, $endH, $endW) {
+  @keyframes growHW {
+    0% {
+      width: $startW;
+      height: $startH;
+    }
+    100% {
+      width: $endW;
+      height: $endW;
+    }
+  }
+}
+
+@mixin modalFadeInAndGrow {
+  animation: fadein 2s;
+  animation: growHW 0.7s;
+  @include fadeInAnimation;
+  @include growHeightAndWidth(0px, 0px, 80%, 80%);
+}
+
+@mixin overlay {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+/* 
+ * Quickly work with media queries
+*/
+$largeIphone: 414;
+@mixin screen-width($point) {
+  @if $point==240 {
+    @media (max-width: 240px) {
+      @content;
+    }
+  }
+
+  @if $point==320 {
+    @media (max-width: 320px) {
+      @content;
+    }
+  }
+
+  @if $point==480 {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+  @if $point==600 {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+  @if $point==768 {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $point==1024 {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+  @if $point==1140 {
+    @media (max-width: 1140px) {
+      @content;
+    }
+  }
+  @if $point==1280 {
+    @media (max-width: 1280px) {
+      @content;
+    }
+  }
+  @if $point==1500 {
+    @media (max-width: 1500px) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import '../../utils/css/mixins/screens.scss';
+@import '../../utils/css/mixins/colors.scss';
+.content {
+  padding: {
+    top: 1em;
+    bottom: 0.5em;
+  }
+  border-bottom: 0.1em solid $nilBlue;
+  .left {
+    flex: 1;
+    .headerIcon {
+      float: left;
+      width: auto;
+      height: 2.3em;
+    }
+  }
+  .middle {
+    flex: 5;
+    .middleIcon {
+      height: 1.7em;
+      padding: {
+        left: 2em;
+      }
+    }
+  }
+  .right {
+    //flex: 2 doesnt make it horizontal
+    flex: 3; 
+    .button {
+      border: 0.2em solid $nilBlue;
+      color: $nilBlue;
+      background-color: $nilBlue;
+      &:hover {
+        background-color: $nilBlue !important;
+        color: $nilWhite;
+      }
+    }
+    .loginButton {
+      margin: {
+        right: 1em;
+      }
+    }
+  }
+}
