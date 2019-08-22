@@ -1,7 +1,8 @@
 .button {
     width: 13em;
     height: 3em;
-    border-radius: 2em;
+    font-weight: bolder;
+    // border-radius: 2em;
     &:hover {
       cursor: pointer;
     }

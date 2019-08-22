@@ -8,7 +8,8 @@ body {
 .content {
   display: flex;
   width: $maxWidth;
-  min-height: 100%;
   text-align: center;
   margin: 0 auto;
+  font-weight: bold;
+  font-family: "DinRegular","Arial",Helvetica,sans-serif;
 }

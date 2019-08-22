@@ -1,6 +1,6 @@
 @import '../../utils/css/mixins/screens.scss';
 @import '../../utils/css/mixins/colors.scss';
-$paneHeight: 100vh;
+$paneHeight: 300vh;
 .content {
  
   .leftpane {
@@ -17,6 +17,11 @@ $paneHeight: 100vh;
     height: $paneHeight;
     color: $jiveBlue;
     flex: 1;
+    padding-top: 20vh;
+    
+  }
+  .rightBody{
+    padding-top: 4vh;
   }
   
 }

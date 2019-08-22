@@ -1,8 +1,9 @@
 @import '../../utils/css/mixins/screens.scss';
 @import '../../utils/css/mixins/colors.scss';
 .content {
-  background-color: $nilBlue;
-  height: 10vh;
-  color: $nilWhite;
+  background-color: $jiveBlue;
+  height: 6.1vh;
+  color: $jiveWhite;
   bottom: 0vh;
+  padding-top: 4vh;
 }

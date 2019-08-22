@@ -1,6 +1,6 @@
 @import '../../utils/css/mixins/screens.scss';
 @import '../../utils/css/mixins/colors.scss';
-$paneHeight: 60vh;
+$paneHeight: 100vh;
 .content {
  
   .leftpane {
@@ -9,7 +9,7 @@ $paneHeight: 60vh;
     background-color: $jiveGray;
     color: $jiveBlue;
     flex: 1;
-    padding-top: 21vh;
+    padding-top: 10vh;
   }
 
   .rightpane {
@@ -17,11 +17,22 @@ $paneHeight: 60vh;
     height: $paneHeight;
     color: $jiveBlue;
     flex: 1;
-    padding-top: 21vh;
-    
-  }
-  .rightBody{
-    padding-top: 2vh;
+    padding-top: 10vh;
+
+    .buttonsContainer {
+      input {
+        width: 60%;
+        height: 2em;
+        margin: {
+          bottom: 1em;
+        }
+        padding: {
+          left: 2em;
+          right: 2em;
+        }
+        border-radius: 3em;
+      }
+    }
   }
   
 }

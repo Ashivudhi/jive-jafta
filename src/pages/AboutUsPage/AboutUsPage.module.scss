@@ -1,23 +1,37 @@
 @import '../../utils/css/mixins/screens.scss';
 @import '../../utils/css/mixins/colors.scss';
-$paneHeight: 60vh;
+$paneHeight: 77vh;
 .content {
  
   .leftpane {
     height: $paneHeight;
-    max-width: 200vh;
+    max-width: 25%;
     background-color: $jiveGray;
     color: $jiveBlue;
     flex: 1;
-    padding-top: 21vh;
+    
   }
-
+  .middlepane{
+    background-color: $jiveGray;
+    height: $paneHeight;
+    max-width: 50%;
+    text-align: left;
+    font-family: cursive;
+    flex: 1;
+   
+    
+  }
+  .middleBody{
+    padding-top: 2vh;
+  }
   .rightpane {
     background-color: $jiveGray;
     height: $paneHeight;
-    color: $jiveBlue;
+    max-width:25%;
+    font-size: 14;
+    font-family: cursive;
     flex: 1;
-    padding-top: 21vh;
+   
     
   }
   .rightBody{

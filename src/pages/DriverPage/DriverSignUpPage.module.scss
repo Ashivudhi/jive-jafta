@@ -1,0 +1,58 @@
+@import '../../utils/css/mixins/screens.scss';
+@import '../../utils/css/mixins/colors.scss';
+$paneHeight: 75.9vh;
+.content {
+  .leftpane {
+    height: $paneHeight;
+    background-color: $jiveBlue;
+    flex: 1;
+   padding-top: 2vh;
+   
+    .button {
+      border: 0.2em solid $jiveBlue;
+      color: $jiveBlue;
+      background-color: $jiveBlue;
+      &:hover {
+        background-color: $jiveDarkBlue !important;
+        color: $jiveWhite;
+      }
+    }
+    
+   
+  }
+
+  .rightpane {
+    background-color: $jiveGray;
+    height: $paneHeight;
+    flex: 2;
+    padding-top: 2vh;
+
+    .rightBody{
+      padding-top: 1vh;
+    }
+
+    .button {
+      border: 0.2em solid $jiveBlue;
+      background-color: $jiveBlue;
+      &:hover {
+        background-color: $jiveBlue !important;
+        color: $jiveWhite;
+      }
+    }
+
+    .buttonsContainer {
+      input {
+        width: 60%;
+        height: 2em;
+        margin: {
+          bottom: 1em;
+        }
+        padding: {
+          left: 2em;
+          right: 2em;
+        }
+        border-radius: 3em;
+      }
+    }
+  }
+}

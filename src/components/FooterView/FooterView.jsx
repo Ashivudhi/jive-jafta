@@ -12,7 +12,7 @@ export default withRouter((props) => {
       className={cx(styles.content)}
       style={{ display: lists.hideHeaderAndFooter.includes(currentLocation) ? 'none' : 'block' }}
     >
-      &copy; The Open NIL Project. All Rights Reserved.
+      &copy; JIVE APP. All Rights Reserved.
     </div>
   );
 });

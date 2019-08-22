@@ -1,38 +1,61 @@
 @import '../../utils/css/mixins/screens.scss';
 @import '../../utils/css/mixins/colors.scss';
 .content {
+  
   padding: {
     top: 1em;
     bottom: 0.5em;
   }
-  border-bottom: 0.1em solid $nilBlue;
+  
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  
+  border-bottom: 0.2em solid $jiveBlue;
+  background-color: $jiveWhite;
   .left {
+    color: $jiveBlue;
+    font-size: 35px;
     flex: 1;
-    .headerIcon {
-      float: left;
-      width: auto;
-      height: 2.3em;
-    }
+    
   }
   .middle {
-    flex: 5;
-    .middleIcon {
-      height: 1.7em;
-      padding: {
-        left: 2em;
-      }
+    color: $jiveBlue;
+  flex: 4;
+  
+  & a{
+   
+    margin: 0;
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    font-size: 30px;
+    font-size: 0.75rem;
+    line-height: 2;
+    margin-bottom: 0;
+    color: $jiveBlue;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+    & li{
+     list-style: none;
+      display: inline;
     }
   }
   .right {
-    //flex: 2 doesnt make it horizontal
-    flex: 3; 
+    
+    flex: 2; 
     .button {
-      border: 0.2em solid $nilBlue;
-      color: $nilBlue;
-      background-color: $nilBlue;
+      border: 0.2em solid $jiveBlue;
+      color: $jiveBlue;
+      background-color: $jiveBlue;
       &:hover {
-        background-color: $nilBlue !important;
-        color: $nilWhite;
+        background-color: $jiveBlue !important;
+        color: $jiveWhite;
       }
     }
     .loginButton {

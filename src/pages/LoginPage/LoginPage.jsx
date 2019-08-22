@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import cx from 'classnames';
-import TextInput from '../../components/TextInputView/TextInputView';
 import TextView from '../../components/TextView/TextView';
 import ButtonView from '../../components/ButtonView/ButtonView';
 import SocialButtonView from '../../components/SocialButtonView/SocialButtonView';
@@ -8,42 +7,41 @@ import colors from '../../utils/helpers/colors';
 import styles from './LoginPage.module.scss';
 import DriverLogo from '../../assets/Driver.jpg';
 import RiderLogo from '../../assets/Rider.png';
+import DriverLoginPage from '../DriverPage/DriverLoginPage';
+
 
 export default class LoginPage extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      email: '',
-      password: '',
-    };
-  }
-
-  doLogin = () => {
-    const { email, password } = this.state;
-    console.log(`loggin in user: ${email} with pass: ${password}`);
-  };
-
+ 
   render() {
+   
     return (
       <div className={cx(styles.content)}>
         <div className={cx(styles.leftpane)}>
         <div className={cx(styles.leftHeader)}>
-            <img src={DriverLogo} alt="Logo" />
+            <img src={DriverLogo} height={300} alt="Driver" />
           </div>
           <div className={cx(styles.leftBody)}>
-          <TextView text="LOGIN AS A DRIVER" />
+          <ButtonView
+                text="LOGIN AS A  DRIVER"
+                bgcolor={colors.jiveBlue}
+                onClick={() => alert('Clicked')}
+                tcolor={colors.jiveGray}
+              />
           </div>
-            <div className={cx(styles.leftFooter)}>
-            &copy; JIVE. All Right Resevered
-            </div>
+            
           </div>
 
         <div className={cx(styles.rightpane)}>
           <div className={cx(styles.rightHeader)}>
-          <img src={RiderLogo} alt="Logo" />
+          <img src={RiderLogo} height={270} alt="Rider" onClick={DriverLoginPage}/>
           </div>
           <div className={cx(styles.rightBody)}>
-            <TextView text='LOGIN AS A  RIDER' />
+            <ButtonView
+                text="LOGIN AS A  RIDER"
+                bgcolor={colors.jiveBlue}
+                onClick={() => alert('Clicked')}
+                tcolor={colors.jiveGray}
+              />
           </div>
           <div className={cx(styles.rightFooter)}>
             <div className={cx(styles.blueLine)}>
