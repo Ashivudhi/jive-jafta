@@ -14,13 +14,13 @@
   border-bottom: 0.2em solid $jiveBlue;
   background-color: $jiveWhite;
   .left {
-    color: $jiveBlue;
+    color: $jiveGray;
     font-size: 35px;
     flex: 1;
     
   }
   .middle {
-    color: $jiveBlue;
+    color: $jiveGray;
   flex: 4;
   
   & a{
@@ -36,9 +36,12 @@
     font-size: 0.75rem;
     line-height: 2;
     margin-bottom: 0;
-    color: $jiveBlue;
+    color: $jiveGray;
     text-transform: uppercase;
     text-decoration: none;
+    &:hover{
+      color: $jiveBlue;
+    }
   }
   
     & li{

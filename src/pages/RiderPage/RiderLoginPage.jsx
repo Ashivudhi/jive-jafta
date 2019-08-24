@@ -3,10 +3,8 @@ import cx from 'classnames';
 import TextInput from '../../components/TextInputView/TextInputView';
 import TextView from '../../components/TextView/TextView';
 import ButtonView from '../../components/ButtonView/ButtonView';
-import SocialButtonView from '../../components/SocialButtonView/SocialButtonView';
-import launcherLogo from '../../assets/ic_laucnher_nil.svg';
 import colors from '../../utils/helpers/colors';
-import styles from './SignupPage.module.scss';
+import styles from './RiderLoginPage.module.scss';
 
 export default class RiderLoginPage extends Component {
   constructor(props) {
@@ -27,11 +25,9 @@ export default class RiderLoginPage extends Component {
       <div className={cx(styles.content)}>
         <div className={cx(styles.leftpane)}>
           <div className={cx(styles.leftHeader)}>
-            <img src={launcherLogo} alt="Logo" />
+            
           </div>
           <div className={cx(styles.leftBody)}>
-            <TextView text="The Open Namibian Indigenous Languages (NIL) Project" />
-            <TextView text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab atque necessitatibus saepe enim eos, praesentium totam iusto explicabo consequatur aliquam doloremque quidem ea id accusamus. Labore nihil qui rem maiores exercitationem itaque, aliquam consequatur minus fuga ad repellendus eos error corporis, minima fugit amet omnis laboriosam! Pariatur dolor aliquam aliquid voluptates molestiae dolore qui alias." />
             
             <div />
             
@@ -39,35 +35,26 @@ export default class RiderLoginPage extends Component {
         </div>
         <div className={cx(styles.rightpane)}>
           <div className={cx(styles.rightHeader)}>
-            <TextView text="Join The Largest Namibian Digital Indigenous Language Community" />
+            <TextView text="Join The Largest Namibian Drivers and Riders tracking Community" />
           </div>
           <div className={cx(styles.rightBody)}>
-            <div className={cx(styles.buttonsContainer)}>
               <TextInput placeholder="Username" />
+            <div className={cx(styles.buttonsContainer)}>
+              
               <TextInput placeholder="Email" />
+            <div className={cx(styles.rightMiddle)}>
               <TextInput placeholder="Password" />
+              </div>
             </div>
-            <ButtonView
-              text="Sign Up"
-              bgcolor={colors.nilDarkBlue}
-              onClick={() => alert('Clicked')}
-            />
-            <TextView text='By clicking "Sign Up" you wil be agreeing to our Terms of service and privacy statements' />
+            
           </div>
           <div className={cx(styles.rightFooter)}>
             <div className={cx(styles.blueLine)}>
-              <span>OR SIGN UP WITH</span>
-              <div className={cx(styles.socialButtons)}>
-                
-                <SocialButtonView social="facebook" onClick={() => alert('OK')} />
-                <SocialButtonView social="google" onClick={() => alert('OK')} />
-               
-              </div>
-              <ButtonView
-                text="Sign Up Later"
-                bgcolor={colors.nilRed}
-                onClick={() => alert('Clicked')}
-              />
+            <ButtonView
+              text="LOG IN"
+              bgcolor={colors.jiveDarkBlue}
+              onClick={() => alert('Clicked')}
+            />
             </div>
           </div>
         </div>

@@ -1,7 +1,10 @@
+@import '../../utils/css/mixins/colors.scss';
 .input {
   padding: 1em;
-  width: 100%;
-  border: none;
+  width: 50%;
+  border: solid $jiveBlue;
+  border-spacing: 2em;
+  border-radius: 2em;
   background-color: rgb(241, 239, 239);
   &:focus {
     outline: none;

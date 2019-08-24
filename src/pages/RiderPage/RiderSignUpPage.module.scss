@@ -1,0 +1,39 @@
+@import '../../utils/css/mixins/screens.scss';
+@import '../../utils/css/mixins/colors.scss';
+$paneHeight: 70vh;
+.content {
+ 
+  .leftpane {
+    height: $paneHeight;
+    max-width: 25%;
+    color: $jiveWhite;
+    background-image: url(../../assets/Taxi2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1;
+    padding-top: 7.3vh;
+  }
+
+  .rightpane {
+   background-color: $jiveGray;
+    background-position: center;
+    height: $paneHeight;
+    flex: 1;
+    padding-top: 7.3vh;
+   
+    
+  }
+  .signupButton{
+    padding-top: 2vh;
+  }
+  .emailButton{
+    padding-top: 1vh;
+  }
+  .rightBody{
+    padding-top: 4vh;
+  }
+  .rightFooter{
+      padding-top: 2vh;
+  }
+  
+}

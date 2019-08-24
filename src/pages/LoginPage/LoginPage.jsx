@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import cx from 'classnames';
-import TextView from '../../components/TextView/TextView';
+//import TextView from '../../components/TextView/TextView';
 import ButtonView from '../../components/ButtonView/ButtonView';
-import SocialButtonView from '../../components/SocialButtonView/SocialButtonView';
+// import SocialButtonView from '../../components/SocialButtonView/SocialButtonView';
 import colors from '../../utils/helpers/colors';
 import styles from './LoginPage.module.scss';
 import DriverLogo from '../../assets/Driver.jpg';
@@ -11,7 +11,15 @@ import DriverLoginPage from '../DriverPage/DriverLoginPage';
 
 
 export default class LoginPage extends Component {
+ constructor(){
+   super();
+   this.handleClick = this.handleClick.bind(this);
+  }
  
+  handleClick(e) {
+    e.preventDefault();
+    this.props.history.push('./DriverLoginPage');
+ }
   render() {
    
     return (
@@ -24,7 +32,7 @@ export default class LoginPage extends Component {
           <ButtonView
                 text="LOGIN AS A  DRIVER"
                 bgcolor={colors.jiveBlue}
-                onClick={() => alert('Clicked')}
+                onClick={() => this.handleClick}
                 tcolor={colors.jiveGray}
               />
           </div>

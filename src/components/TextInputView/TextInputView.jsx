@@ -25,7 +25,7 @@ export default class LoginPage extends Component {
         className={cx(styles.input, classname)}
         label={label}
         value={text}
-        placeholder=""
+        placeholder={placeholder}
         onChange={event => this.handleInputChange(event)}
       />
     );

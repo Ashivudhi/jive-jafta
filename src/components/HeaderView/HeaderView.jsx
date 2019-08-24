@@ -1,6 +1,6 @@
 import React from 'react';
 import cx from 'classnames';
-import { withRouter, Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import colors from '../../utils/helpers/colors';
 import ButtonView from '../ButtonView/ButtonView';
 import styles from './HeaderView.module.scss';
