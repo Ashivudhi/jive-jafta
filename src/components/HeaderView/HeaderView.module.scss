@@ -10,14 +10,19 @@
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
-  
   border-bottom: 0.2em solid $jiveBlue;
   background-color: $jiveWhite;
   .left {
     color: $jiveGray;
     font-size: 35px;
     flex: 1;
+  
+     & a{
+       text-decoration: none;
+       color: $jiveGray;
+     }
     
+    list-style: none;
   }
   .middle {
     color: $jiveGray;
@@ -66,5 +71,9 @@
         right: 1em;
       }
     }
+  }
+  .active {
+    background-color:$jiveBlue;
+    color: $jiveWhite;
   }
 }

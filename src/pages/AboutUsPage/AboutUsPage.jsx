@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import cx from 'classnames';
-import ButtonView from '../../components/ButtonView/ButtonView';
-import colors from '../../utils/helpers/colors';
 import styles from './AboutUsPage.module.scss';
 
 export class AboutUs extends Component {

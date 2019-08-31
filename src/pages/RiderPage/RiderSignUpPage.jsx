@@ -70,6 +70,7 @@ export default class RiderLoginPage extends Component {
                   onClick={() => alert('Clicked')}
                 />
               </div>
+              
             </div>
           </div>
         </div>

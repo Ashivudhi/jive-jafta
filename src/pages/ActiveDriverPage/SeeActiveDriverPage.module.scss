@@ -1,0 +1,9 @@
+@import '../../utils/css/mixins/screens.scss';
+@import '../../utils/css/mixins/colors.scss';
+$paneHeight: 100vh;
+.map {
+
+    max-width: '100%';
+    max-height: '100vh';
+    
+}
